@@ -24,7 +24,7 @@ function PlaylistTitleBox({ name, setNewPlaylist }) {
     <div className={styles.titleBox}>
       <input
         type="text"
-        placeholder={name}
+        placeholder="New Playlist"
         value={name}
         onChange={handleInput}
       />

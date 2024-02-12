@@ -1,5 +1,7 @@
 .column {
-  background-color: #f3f3f3;
-  padding: 1rem 2rem;
+  padding: 4rem 2rem;
   overflow: scroll;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
 }

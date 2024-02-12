@@ -2,6 +2,7 @@ import { useState } from "react";
 import PlaylistTitleBox from "./PlaylistTitleBox";
 import Track from "./Track";
 import Spotify from "../util/Spotify";
+import styles from "../modules/NewPlaylistBuilder.module.css";
 
 function NewPlaylistBuilder({
   newPlaylist,
@@ -32,14 +33,18 @@ function NewPlaylistBuilder({
   // }
 
   function savePlaylist() {
-    console.log(newPlaylist);
-    Spotify.createPlaylist(newPlaylist);
-    setNewPlaylist({
-      name: "New Playlist",
-      description: "New playlist",
-      public: false,
-      tracklist: [],
-    });
+    if (newPlaylist.tracklist.length && newPlaylist.name) {
+      console.log(newPlaylist);
+      Spotify.createPlaylist(newPlaylist);
+      setNewPlaylist({
+        name: "New Playlist",
+        description: "New playlist",
+        public: false,
+        tracklist: [],
+      });
+    } else {
+      alert("Add tracks and playlist title to save");
+    }
   }
 
   return (
@@ -56,7 +61,11 @@ function NewPlaylistBuilder({
           newPlaylist={newPlaylist}
         />
       ))}
-      <button onClick={savePlaylist}>Save Playlist to Spotify</button>
+      {newPlaylist.tracklist.length && (
+        <button onClick={savePlaylist} className={styles.btnSave}>
+          Save Playlist to Spotify
+        </button>
+      )}
     </>
   );
 }

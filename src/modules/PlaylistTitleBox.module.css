@@ -1,3 +1,8 @@
 .titleBox {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 4rem;
+
+  &::placeholder {
+    color: gray;
+  }
 }

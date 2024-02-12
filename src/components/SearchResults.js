@@ -9,10 +9,6 @@ function SearchResults({
   setNewPlaylist,
   newPlaylist,
 }) {
-  const searchResults = catalog.filter((track) =>
-    track.trackName.toLowerCase().includes(query)
-  );
-
   function togglePlaylist(track) {
     if (!newPlaylist.tracklist.includes(track)) {
       setNewPlaylist((currentPlaylist) => ({
@@ -31,16 +27,9 @@ function SearchResults({
 
   return (
     <>
-      {/* {searchResults.map((item) => (
-        <Track
-          item={item}
-          key={item.id}
-          handleClick={() => togglePlaylist(item)}
-        />
-      ))} */}
-
       {searchResults2.map((item) => (
         <Track
+          newPlaylist={newPlaylist}
           item={item}
           key={item.uri}
           handleClick={() => togglePlaylist(item)}

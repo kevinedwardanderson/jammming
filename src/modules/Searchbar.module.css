@@ -4,7 +4,7 @@
   /* padding: 2rem 0; */
   gap: 1.5rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 p {
@@ -13,8 +13,21 @@ p {
 
 input {
   width: 100%;
-  border: none;
+  border: solid rgb(51, 51, 51) 1px;
   border-radius: 5px;
   font-size: 1.6rem;
-  padding: 5px;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 2rem;
+  color: white;
+  font-family: "jost";
+}
+
+.searchbar button {
+  padding: 0.75rem 1rem;
+  border-radius: 50rem;
+  border: none;
+  background-color: rgb(73, 213, 73);
+  color: white;
+  text-transform: uppercase;
 }

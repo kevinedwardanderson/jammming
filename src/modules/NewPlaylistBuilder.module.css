@@ -1,21 +1,9 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.song {
-  font-size: 2rem;
-  padding-right: 1.5rem;
-}
-
-.artist {
-  font-size: 1.4rem;
-  font-style: italic;
+.btnSave {
+  padding: 0.75rem 1rem;
+  border-radius: 50rem;
+  border: none;
+  background-color: rgb(73, 213, 73);
+  color: white;
+  text-transform: uppercase;
+  align-self: center;
 }

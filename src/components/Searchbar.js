@@ -13,16 +13,24 @@ function Searchbar({ updateSearch, query, setQuery, setSearchResults2 }) {
     );
   }
 
-  async function spotSearch() {
+  async function spotSearch(e) {
+    e.preventDefault();
     const newSearch = await Spotify.search(query);
     setSearchResults2(newSearch);
   }
 
   return (
-    <div className={styles.searchbar}>
-      <input type="text" id="searchbar" value={query} onChange={handleInput} />
-      <button onClick={spotSearch}>Search</button>
-    </div>
+    <>
+      <form onSubmit={(e) => spotSearch(e)} className={styles.searchbar}>
+        <input
+          type="text"
+          id="searchbar"
+          value={query}
+          onChange={handleInput}
+        />
+        <button className={styles.Search}>Search</button>
+      </form>
+    </>
   );
 }
 
