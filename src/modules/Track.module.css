@@ -23,10 +23,6 @@
   gap: 2rem;
 }
 
-.columnLeft {
-  /* justify-content: flex-start; */
-}
-
 .columnRight {
   display: flex;
   justify-items: flex-end;

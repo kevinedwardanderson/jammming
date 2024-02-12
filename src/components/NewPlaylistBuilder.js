@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PlaylistTitleBox from "./PlaylistTitleBox";
 import Track from "./Track";
 import Spotify from "../util/Spotify";
