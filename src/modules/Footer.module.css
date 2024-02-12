@@ -1,0 +1,6 @@
+footer {
+  color: white;
+  background-color: black;
+  grid-column: 1 / -1;
+  padding: 1rem;
+}

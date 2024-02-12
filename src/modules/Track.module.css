@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  margin: 0.25rem 0;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.song {
+  font-size: 1.6rem;
+  padding-right: 1.5rem;
+  font-weight: 500;
+}
+
+.artist {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #646464;
+}
+
+.btnAdd {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: rgb(167, 167, 255);
+  border-radius: 5px;
+  border: none;
+}
+
+.inPlaylist {
+  border: 2px rgb(102, 102, 218) solid;
+}

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.song {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+
+.artist {
+  font-size: 1.4rem;
+  font-style: italic;
+}

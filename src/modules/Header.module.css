@@ -1,0 +1,26 @@
+.logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  background-image: linear-gradient(
+    325deg,
+    rgb(227, 155, 92),
+    rgb(210, 108, 19),
+    rgb(186, 57, 11)
+  );
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.library {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+}

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 60px 1fr 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  height: 100vh;
+  overflow: scroll;
+  font-family: "Jost";
 }
