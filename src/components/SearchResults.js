@@ -1,6 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Track from "./Track.js";
-import Spotify from "../util/Spotify.js";
+// import Spotify from "../util/Spotify.js";
 
 function SearchResults({
   catalog,

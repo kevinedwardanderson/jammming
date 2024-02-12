@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import dataSearch from "./data/mockdata_search";
-import dataPlaylist from "./data/mockdata_playlist";
+// import dataPlaylist from "./data/mockdata_playlist";
 import SearchResults from "./components/SearchResults";
 import Column from "./components/Column";
 import Searchbar from "./components/Searchbar";
@@ -27,10 +27,10 @@ function App() {
 
   Spotify.getAccessToken();
 
-  async function getPopular() {
-    const newSearch = await Spotify.getPopular();
-    setSearchResults2(newSearch);
-  }
+  // async function getPopular() {
+  //   const newSearch = await Spotify.getPopular();
+  //   setSearchResults2(newSearch);
+  // }
 
   // getPopular();
 

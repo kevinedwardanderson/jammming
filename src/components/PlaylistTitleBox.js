@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import styles from "../modules/PlaylistTitleBox.module.css";
 
 function PlaylistTitleBox({ name, setNewPlaylist }) {
-  let input;
+  // let input;
 
   // function handleSubmit(e) {
   //   e.preventDefault();

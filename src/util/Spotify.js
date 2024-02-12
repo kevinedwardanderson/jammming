@@ -90,32 +90,32 @@ const Spotify = {
     return results;
   },
 
-  async getPlaylists() {
-    const accessToken = await Spotify.getAccessToken();
-    let user_id;
-    let playlist_id;
-    const data = await fetch(`https://api.spotify.com/v1/me`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    }).then((response) => response.json());
+  // async getPlaylists() {
+  //   const accessToken = await Spotify.getAccessToken();
+  //   let user_id;
+  //   let playlist_id;
+  //   const data = await fetch(`https://api.spotify.com/v1/me`, {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: `Bearer ${accessToken}`,
+  //     },
+  //   }).then((response) => response.json());
 
-    console.log(data);
-    user_id = data.id;
+  //   console.log(data);
+  //   user_id = data.id;
 
-    const playlists = await fetch(
-      `https://api.spotify.com/v1/users/${user_id}/playlists`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
-      }
-    ).then((response) => response.json());
+  //   const playlists = await fetch(
+  //     `https://api.spotify.com/v1/users/${user_id}/playlists`,
+  //     {
+  //       method: "GET",
+  //       headers: {
+  //         Authorization: `Bearer ${accessToken}`,
+  //       },
+  //     }
+  //   ).then((response) => response.json());
 
-    console.log(playlists.items[0].name);
-  },
+  //   console.log(playlists.items[0].name);
+  // },
 
   async createPlaylist(playlist) {
     const accessToken = await Spotify.getAccessToken();
